@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 12px 14px;
+  color: #e5e5d6;
+  font-weight: 600;
+  border: 1px solid #e5e5d6;
+
+  &.button--primary {
+    background-color: #263230;
+    text-transform: uppercase;
+    border: 1px solid #e5e5d6;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #e5e5d6;
+      color: #263230;
+    }
+
+    &:focus {
+      outline: 4px solid #7f8d74;
+    }
+
+    &:pressed {
+      background-color: #b1aa9d;
+    }
+  }
+}
