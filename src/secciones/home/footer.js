@@ -1,5 +1,4 @@
 import Logo from "../../assets/icons/icon-logo.inline.svg";
-import "../../assets/styles/components/_footer.scss";
 
 const Footer = () => {
   return (

@@ -1,8 +1,13 @@
 //Font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
+// Utils
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
 // Componentes
 @import "./components/container";
+@import "./components/footer";
 
 // Screens
 @import "./pages/home/home.scss";
@@ -14,21 +19,41 @@ body {
     font-size: 32px;
     line-height: 40px;
     font-weight: 500;
+    @include response(medium) {
+      font-size: 64px;
+      line-height: 80px;
+      font-weight: 500;
+    }
   }
   h2 {
     font-size: 32px;
     line-height: 40px;
     font-weight: 300;
+    @include response(medium) {
+      font-size: 64px;
+      line-height: 80px;
+      font-weight: 300;
+    }
   }
 
   h3 {
     font-size: 28px;
     line-height: 36px;
     font-weight: 400;
+    @include response(medium) {
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 400;
+    }
   }
   h4 {
     font-size: 24px;
     line-height: 34px;
     font-weight: 500;
+    @include response(medium) {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 500;
+    }
   }
 }

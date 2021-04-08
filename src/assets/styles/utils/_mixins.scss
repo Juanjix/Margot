@@ -1,4 +1,4 @@
-@import "../breakpoints/index.js";
+@import "./variables";
 
 @mixin response($breakpoint) {
   @if map-has-hey($breakpoints, $breakpoint) {
