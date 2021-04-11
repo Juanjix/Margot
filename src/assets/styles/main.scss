@@ -1,3 +1,6 @@
+//bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "/node_modules/bootstrap/scss/grid";
 //Font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
@@ -16,22 +19,22 @@ body {
   font-family: "Montserrat", sans-serif;
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
     font-weight: 500;
     @include response(medium) {
-      font-size: 64px;
-      line-height: 80px;
+      font-size: 56px;
+      line-height: 72px;
       font-weight: 500;
     }
   }
   h2 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
     font-weight: 300;
     @include response(medium) {
-      font-size: 64px;
-      line-height: 80px;
+      font-size: 56px;
+      line-height: 72px;
       font-weight: 300;
     }
   }
@@ -55,5 +58,23 @@ body {
       line-height: 40px;
       font-weight: 500;
     }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: map-get($colors, trigo);
+    font-weight: 600;
+    text-decoration-line: underline;
+  }
+  .button-primary {
+    text-transform: uppercase;
+    margin-bottom: 74px;
+    background-color: map-get($colors, mineral);
+    color: map-get($colors, arroz);
+    padding: 12px 24px;
+    border: 1px solid map-get($colors, arroz);
   }
 }

@@ -1,8 +1,32 @@
-.footer {
-  background: #263230;
-  color: #e5e5d6;
+@use "sass:map";
 
-  @include response(medium) {
-    background: red;
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #263230;
+  color: map-get($colors, arroz);
+  padding: 72px 60px 120px 16px;
+
+  @include response(small) {
+    flex-direction: row;
+  }
+}
+.titulo {
+  margin-top: 40px;
+  margin-bottom: 74px;
+}
+
+.media {
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 72px;
+  li:last-child {
+    padding-left: 24px;
+  }
+}
+.brand {
+  p {
+    color: map-get($colors, madera);
+    font-weight: 600;
   }
 }
