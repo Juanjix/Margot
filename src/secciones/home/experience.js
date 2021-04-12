@@ -5,7 +5,7 @@ import consult from "../../assets/images/experience/Img4.jpg";
 
 const Experience = () => {
   return (
-    <div className="container experience-container">
+    <section className="container">
       <div className="exp-title">
         <h4>CADA OCASIÓN, UNA NUEVA EXPERIENCIA</h4>
       </div>
@@ -43,7 +43,7 @@ const Experience = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

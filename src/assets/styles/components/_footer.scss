@@ -1,5 +1,28 @@
 @use "sass:map";
 
+/*
+  JUANSO:
+  1) Fijate que estás declarando los estilos de manera "separada". De la forma en la que estás declarando vos las cosas, podría haber un elemento <div className="titulo"></div> fuera del footer que va a tener los estilos que vos definiste abajo. 
+
+  ESTO ESTA MAL ❌
+    .footer {
+      [estilos]
+    }
+
+    .titulo {
+      [estilos]
+    }
+
+  ESTO ESTÁ BIEN ✅
+    .footer {
+      [estilos]
+
+      .titulo {
+        [estilos]
+      }
+    }
+*/
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -10,24 +33,25 @@
   @include response(small) {
     flex-direction: row;
   }
-}
 
-.titulo {
-  margin-top: 40px;
-  margin-bottom: 74px;
-}
-
-.media {
-  display: flex;
-  margin-bottom: 80px;
-  margin-top: 72px;
-  li:last-child {
-    padding-left: 24px;
+  .titulo {
+    margin-top: 40px;
+    margin-bottom: 74px;
   }
-}
-.brand {
-  p {
-    color: map-get($colors, madera);
-    font-weight: 600;
+
+  .media {
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: 72px;
+    li:last-child {
+      padding-left: 24px;
+    }
+  }
+
+  .brand {
+    p {
+      color: map-get($colors, madera);
+      font-weight: 600;
+    }
   }
 }

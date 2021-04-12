@@ -1,10 +1,23 @@
-import { Container } from "react-bootstrap";
 import Logo from "../../assets/icons/icon-logo.inline.svg";
 
 const Footer = () => {
   return (
-    <Container className="container">
-      <div className="footer">
+    /*
+      JUANSO
+      1) En HTML, los footers tienen una etiqueta dedicada <footer></footer>. Usémosla.
+
+      2) También, fijate que estás "envolviendo" al footer dentro del <container></container>,
+      y esto va a hacer que tu footer tenga un ancho máximo. Tu <container></container> debería estar dentro de la etiqueta <footer></footer> de esta manera:
+
+      <footer className="footer">
+        <div className="container">
+          [el contenido de tu footer]
+        </div>
+      </footer>
+    */
+
+    <footer className="footer">
+      <div className="container">
         <div>
           <img src={Logo} alt="image" width="106px" height="16px"></img>
           <h3 className="titulo">EN CADA PLATO UNA EMOCION</h3>
@@ -39,7 +52,7 @@ const Footer = () => {
           <p>© MARGOT 2021</p>
         </div>
       </div>
-    </Container>
+    </footer>
   );
 };
 
