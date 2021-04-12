@@ -1,12 +1,12 @@
-//bootstrap
-@import "~bootstrap/scss/bootstrap";
-
 //Font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 // Utils
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
+
+//bootstrap
+@import "~bootstrap/scss/bootstrap";
 
 // Componentes
 @import "./components/container.scss";
