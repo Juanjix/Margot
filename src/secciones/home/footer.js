@@ -1,15 +1,15 @@
+import { Container } from "react-bootstrap";
 import Logo from "../../assets/icons/icon-logo.inline.svg";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <Container className="container">
       <div className="footer">
         <div>
           <img src={Logo} alt="image" width="106px" height="16px"></img>
           <h3 className="titulo">EN CADA PLATO UNA EMOCION</h3>
           <button className="button-primary">HACER RESERVA</button>
         </div>
-
         <div>
           <div>
             <p>
@@ -39,7 +39,7 @@ const Footer = () => {
           <p>© MARGOT 2021</p>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
