@@ -1,34 +1,43 @@
 @use "sass:map";
 
-.experience-container {
+.experience {
   background-color: map-get($colors, mineral);
   color: map-get($colors, arroz);
   display: flex;
+  align-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.exp-title {
+  text-align: center;
+  padding: 0px 16px;
+  margin-top: 72px;
+}
+
+.experience-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  img {
-    width: 328px;
-    height: 200px;
-  }
   @include response(medium) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
-.exp-title {
-  display: inline;
-  text-align: center;
-  padding: 0px 16px;
-  margin-top: 72px;
-}
 
 .prueba {
-  width: 328px;
-  height: 328px;
+  width: 100%;
   margin: 24px 0px 24px;
   background-color: map-get($colors, mineral);
-  div:last-child {
-    margin-bottom: 48px;
+
+  .titulo-prueba {
+    padding: 24px 0px 8px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
   }
 }
