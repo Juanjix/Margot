@@ -1,0 +1,47 @@
+.sustentable {
+  background-color: map-get($colors, mineral);
+  color: map-get($colors, musgo);
+  padding: 72px 0px 72px;
+  display: flex;
+  align-content: center;
+
+  .container {
+    @include response(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  .sus-title {
+    margin-bottom: 48px;
+  }
+
+  .separador {
+    border: 1px solid map-get($colors, musgo);
+    margin: 0 auto;
+    @include response(medium) {
+      width: 688px;
+    }
+    @include response(large) {
+      width: 424px;
+    }
+  }
+
+  .step {
+    display: flex;
+    align-self: flex-start;
+    margin: 32px 0px 32px;
+
+    .step-num {
+      font-size: 72px;
+      padding-right: 16px;
+      color: map-get($colors, olivo);
+    }
+
+    .step-text {
+      font-weight: 400;
+      color: map-get($colors, arroz);
+    }
+  }
+}
