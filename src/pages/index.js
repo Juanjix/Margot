@@ -11,10 +11,10 @@ import Spa from "../secciones/home/spa";
 const Home = () => {
   return (
     <Layout>
-      <Experience />
       <Sustentable />
-      <Footer />
+      <Experience />
       <Spa />
+      <Footer />
     </Layout>
   );
 };

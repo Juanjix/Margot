@@ -20,7 +20,7 @@
   .separador {
     border: 1px solid map-get($colors, musgo);
     margin: 0 auto;
-    @include response(medium) {
+    @include response(extraLarge) {
       width: 688px;
     }
     @include response(large) {
