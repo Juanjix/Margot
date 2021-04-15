@@ -15,9 +15,10 @@ const Experience = () => {
           <div className="col-12 col-md-10">
             <div className="row">
               <div className="col-12 col-sm-6">
-                <div className="prueba">
-                  <img src={resto}></img>
-                  <p className="titulo-prueba">restaurante</p>
+                {/* Diferentes experiencias */}
+                <div className="exp">
+                  <img src={resto} alt="Menu"></img>
+                  <p className="titulo-exp">restaurante</p>
                   <p>
                     Día a día diseñamos menús degustación diferentes en base a
                     nuestra cosecha y materia prima óptima disponible.
@@ -25,9 +26,9 @@ const Experience = () => {
                 </div>
               </div>
               <div className="col-12 col-sm-6">
-                <div className="prueba">
-                  <img src={popUp}></img>
-                  <p className="titulo-prueba">pop up</p>
+                <div className="exp">
+                  <img src={popUp} alt="pop-up"></img>
+                  <p className="titulo-exp">POP UP</p>
                   <p>
                     Invitamos a los principales referentes gastronómicos de la
                     Argentina para que apliquen su creatividad sobre nuestros
@@ -36,11 +37,9 @@ const Experience = () => {
                 </div>
               </div>
               <div className="col-12 col-sm-6">
-                <div className="prueba">
-                  <img src={event}></img>
-                  <p className="titulo-prueba">
-                    EVENTOS PRIVADOS Y CORPORATIVOS
-                  </p>
+                <div className="exp">
+                  <img src={event} alt="eventos"></img>
+                  <p className="titulo-exp">EVENTOS PRIVADOS Y CORPORATIVOS</p>
                   <p>
                     El espacio se encuentra disponible para todo tipo de evento
                     customizado especialmente conforme los deseos del cliente.
@@ -48,9 +47,9 @@ const Experience = () => {
                 </div>
               </div>
               <div className="col-12 col-sm-6">
-                <div className="prueba">
-                  <img src={consult}></img>
-                  <p className="titulo-prueba">Consultoría profesional</p>
+                <div className="exp">
+                  <img src={consult} alt="consultoria"></img>
+                  <p className="titulo-exp">CONSULTORIA PROFESIONAL</p>
                   <p>
                     Ofrecemos asesoramiento personalizado para emprendimientos
                     gastronómicos o afines al rubro.
@@ -60,45 +59,6 @@ const Experience = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="experience-container col-md-9 justify-content-md-around">
-          <div className="prueba">
-            <img src={resto}></img>
-            <p className="titulo-prueba">restaurante</p>
-            <p>
-              Día a día diseñamos menús degustación diferentes en base a nuestra
-              cosecha y materia prima óptima disponible.
-            </p>
-          </div>
-
-          <div className="prueba">
-            <img src={popUp}></img>
-            <p className="titulo-prueba">pop up</p>
-            <p>
-              Invitamos a los principales referentes gastronómicos de la
-              Argentina para que apliquen su creatividad sobre nuestros
-              productos locales.
-            </p>
-          </div>
-
-          <div className="prueba">
-            <img src={event}></img>
-            <p className="titulo-prueba">EVENTOS PRIVADOS Y CORPORATIVOS</p>
-            <p>
-              El espacio se encuentra disponible para todo tipo de evento
-              customizado especialmente conforme los deseos del cliente.
-            </p>
-          </div>
-
-          <div className="prueba">
-            <img src={consult}></img>
-            <p className="titulo-prueba">Consultoría profesional</p>
-            <p>
-              Ofrecemos asesoramiento personalizado para emprendimientos
-              gastronómicos o afines al rubro.
-            </p>
-          </div>
-        </div> */}
       </div>
     </section>
   );

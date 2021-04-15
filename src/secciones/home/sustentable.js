@@ -1,6 +1,6 @@
 const Sustentable = () => {
   return (
-    <div className="sustentable ">
+    <div className="sustentable">
       <div className="container">
         <h4 className="sus-title col-md-5 col-sm-12">
           LA SUSTENTABILIDAD Y TRAZABILIDAD DE NUESTROS PROCESOS NOS DIFERENCIAN

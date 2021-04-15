@@ -1,0 +1,37 @@
+.spa {
+  background-color: map-get($colors, arroz);
+  color: map-get($colors, mineral);
+  padding-top: 80px;
+  padding-bottom: 37px;
+
+  .spa-card {
+    .spa-text {
+      padding-bottom: 16px;
+    }
+
+    .spa-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        padding-right: 16px;
+      }
+
+      .name {
+        color: map-get($colors, olivo);
+        font-weight: 600;
+        margin: 0;
+      }
+      .job {
+        margin: 0;
+      }
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      margin-top: 80px;
+    }
+  }
+}

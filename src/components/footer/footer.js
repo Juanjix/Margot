@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-12 col-sm-6 col-md-5">
-            <img src={Logo} alt="image" width="106px" height="16px"></img>
+            <img src={Logo} alt="logo" width="106px" height="16px"></img>
             <h3 className="titulo">EN CADA PLATO UNA EMOCION</h3>
             <button className="button-primary">HACER RESERVA</button>
           </div>
