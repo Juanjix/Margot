@@ -6,5 +6,25 @@
   .testimonio {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+
+    .testimonio__frase {
+      margin-bottom: 32px;
+    }
+
+    .testimonio__imagen {
+      margin-right: 16px;
+    }
+
+    .testimonio__autor {
+
+      span {
+        text-transform: uppercase;
+      }
+    }
   }
 }
