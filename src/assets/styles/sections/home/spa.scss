@@ -1,7 +1,10 @@
 .spa {
+  padding: 120px 0;
   background-color: map-get($colors, arroz);
-  padding-top: 80px;
-  padding-bottom: 37px;
+
+  .container {
+    max-width: 928px;
+  }
 
   .testimonio {
     display: flex;
@@ -14,13 +17,33 @@
 
     .testimonio__frase {
       margin-bottom: 32px;
+
+      @include response(medium) {
+        max-width: 640px;
+        width: 60%;
+        order: 1;
+      }
     }
 
     .testimonio__imagen {
       margin-right: 16px;
+      
+      @include response(medium) {
+        order: 0;
+        width: 256px;
+        height: 256px;
+        margin-right: 32px;
+      }
     }
 
     .testimonio__autor {
+      margin-top: 32px;
+      
+      .separador {
+        width: 40px;
+        height: 1px;
+        margin: 0 16px;
+      }
 
       span {
         text-transform: uppercase;

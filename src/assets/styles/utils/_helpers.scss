@@ -2,6 +2,10 @@
   .color--#{$nombre} {
     color: #{$color};
   }
+
+  .bg--#{$nombre} {
+    background-color: #{$color};
+  }
 }
 
 @each $nombre, $peso in $weights {
