@@ -10,11 +10,19 @@ const Testimonials = () => {
       <div className="container">
         {/* Testimonio 1:start */}
         <div className="testimonio">
-          <p className="testimonio__frase">
-            Margot és un SPA GASTRONÓMICO, un lugar ideado a la perfección con
-            una propuesta única en Argentina. Producto autóctono y técnicas
-            precisas en un marco de estilo y confort.
-          </p>
+          <div className="testimonio__frase font-weight--500">
+            <p>
+              Margot és un SPA GASTRONÓMICO, un lugar ideado a la perfección con
+              una propuesta única en Argentina. Producto autóctono y técnicas
+              precisas en un marco de estilo y confort.
+            </p>
+
+            <p className="testimonio__autor d-none d-md-flex align-items-center color--olivo">
+              <span className="font-weight--600">Rodrigo Calderón</span>
+              <div className="separador d-flex bg--olivo"></div>
+              Sommelier
+            </p>
+          </div>
 
           <img
             className="testimonio__imagen"
@@ -22,9 +30,8 @@ const Testimonials = () => {
             alt="Rodrigo Calderón"
           />
 
-          <p className="testimonio__autor">
-            <span>Rodrigo Calderón</span>
-            <div className="separador"></div>
+          <p className="testimonio__autor d-md-none color--olivo">
+            <span className="font-weight--600">Rodrigo Calderón</span>
             Sommelier
           </p>
         </div>

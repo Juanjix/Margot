@@ -1,13 +1,17 @@
 .experience {
+  padding: 72px 0;
   background-color: map-get($colors, mineral);
   color: map-get($colors, arroz);
   display: flex;
   align-content: center;
 
+  @include response(medium) {
+    padding: 120px 0;
+  }
+
   .exp-title {
     text-align: center;
     padding: 0px 16px;
-    margin-top: 72px;
   }
 
   .experience-container {
@@ -42,7 +46,6 @@
 .exp-title {
   text-align: center;
   padding: 0px 16px;
-  margin-top: 72px;
 }
 
 .experience-container {
