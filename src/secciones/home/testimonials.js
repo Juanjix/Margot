@@ -4,7 +4,7 @@ import img3 from "../../assets/images/spa/Monique.jpg";
 import icon_back from "../../assets/icons/Icons/Arrow/Back.svg";
 import icon_next from "../../assets/icons/Icons/Arrow/Next.svg";
 
-const Spa = () => {
+const Testimonials = () => {
   return (
     <section className="spa">
       <div className="container">
@@ -34,4 +34,4 @@ const Spa = () => {
   );
 };
 
-export default Spa;
+export default Testimonials;

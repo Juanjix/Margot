@@ -5,7 +5,7 @@ import Layout from "../layouts/layout-primary";
 import Footer from "../components/footer/footer";
 import Experience from "../secciones/home/experience";
 import Sustentable from "../secciones/home/sustentable";
-import Spa from "../secciones/home/spa";
+import Testimonials from "../secciones/home/testimonials";
 //aca voy a importar todas las secciones de mi pagina
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
     <Layout>
       <Sustentable />
       <Experience />
-      <Spa />
+      <Testimonials />
       <Footer />
     </Layout>
   );
