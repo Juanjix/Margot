@@ -1,7 +1,35 @@
 .offer {
+  background-color: map-get($colors, arroz);
+  padding-top: 72px;
+  .offer-title {
+    text-transform: uppercase;
+    padding-bottom: 16px;
+  }
   .offer-reserva {
     padding-bottom: 4px;
     text-transform: uppercase;
     text-decoration: underline;
+  }
+
+  .offer-cards {
+    .card {
+      background-color: map-get($colors, arroz);
+      width: 328px;
+      height: 393px;
+      border: 1px solid map-get($colors, olivo);
+      box-sizing: border-box;
+      img {
+        object-fit: cover;
+      }
+      .card-title {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 32px;
+        padding: 0px 40px;
+      }
+      .card-text {
+        padding: 0px 40px;
+      }
+    }
   }
 }
