@@ -6,6 +6,9 @@
     padding-bottom: 16px;
   }
   .offer-reserva {
+    a {
+      color: map-get($colors, mineral);
+    }
     padding-bottom: 4px;
     text-transform: uppercase;
     text-decoration: underline;
