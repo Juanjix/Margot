@@ -1,6 +1,12 @@
 .offer {
   background-color: map-get($colors, arroz);
-  padding-top: 72px;
+  padding: 72px 0;
+  overflow-x: hidden;
+
+  @include response(medium) {
+    padding: 160px 0;
+  }
+
   .offer-title {
     text-transform: uppercase;
     padding-bottom: 16px;
@@ -15,12 +21,26 @@
   }
 
   .offer-cards {
+    display: flex;
+    margin-top: 54px;
+
+    @include response(medium) {
+      margin-top: 118px;
+    }
+    
     .card {
+      flex-shrink: 0;
       background-color: map-get($colors, arroz);
       width: 328px;
       height: 393px;
+      margin-right: 18px;
       border: 1px solid map-get($colors, olivo);
       box-sizing: border-box;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
       img {
         object-fit: cover;
       }
