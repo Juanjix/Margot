@@ -1,0 +1,14 @@
+.hero {
+  background-color: map-get($colors, mineral);
+  color: map-get($colors, arroz);
+  text-align: center;
+  padding-bottom: 162px;
+
+  img {
+    padding: 72px 0px 104px;
+  }
+
+  .hero__paragraph {
+    font-weight: 600;
+  }
+}

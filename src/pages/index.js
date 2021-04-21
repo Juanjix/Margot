@@ -1,8 +1,11 @@
 // Layout
 import Layout from "../layouts/layout-primary";
 
-// Secciones
+//components
 import Footer from "../components/footer/footer";
+import Hero from "../components/hero/hero";
+
+// Secciones
 import Experience from "../secciones/home/experience";
 import Sustentable from "../secciones/home/sustentable";
 import Testimonials from "../secciones/home/testimonials";
@@ -12,8 +15,9 @@ import Offer from "../secciones/home/offer";
 const Home = () => {
   return (
     <Layout>
-      <Sustentable />
+      <Hero />
       <Offer />
+      <Sustentable />
       <Experience />
       <Testimonials />
       <Footer />
