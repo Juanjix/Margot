@@ -4,6 +4,7 @@ import Layout from "../layouts/layout-primary";
 //components
 import Footer from "../components/footer/footer";
 import Hero from "../components/hero/hero";
+import Nav from "../components/menu/index";
 
 // Secciones
 import Experience from "../secciones/home/experience";
@@ -15,6 +16,7 @@ import Offer from "../secciones/home/offer";
 const Home = () => {
   return (
     <Layout>
+      <Nav />
       <Hero />
       <Offer />
       <Sustentable />

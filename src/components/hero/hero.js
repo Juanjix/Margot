@@ -4,14 +4,14 @@ import img3 from "../../assets/images/hero/img3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
 const Hero = () => {
   var settings = {
     dots: true,
     arrows: false,
-    infinite: true,
     speed: 300,
     slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     adaptiveHeight: true,
     responsive: [
       { breakpoint: 768, settings: { slidesToShow: 1 } },

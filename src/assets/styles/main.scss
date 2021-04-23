@@ -10,12 +10,17 @@
 @import "~bootstrap/scss/bootstrap";
 
 // Componentes
+@import "./components//buttons.scss";
 @import "./components/container.scss";
 @import "./components/footer.scss";
+@import "./components/menu.scss";
+
+//Secciones
 @import "./sections/home/experience.scss";
 @import "./sections//home/sustantable.scss";
 @import "./sections/home/testimonials.scss";
 @import "./sections/home/offer.scss";
+
 // Screens
 @import "./pages/home/home.scss";
 

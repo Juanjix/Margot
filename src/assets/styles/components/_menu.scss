@@ -1,0 +1,60 @@
+.menu {
+  background-color: map-get($colors, mineral);
+  color: map-get($colors, arroz);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  .menu__logo {
+    padding-bottom: 80px;
+    padding-top: 30px;
+  }
+
+  .menu__hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: map-get($colors, arroz);
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .change {
+      .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+    }
+
+    .change {
+      .bar2 {
+        opacity: 0;
+      }
+    }
+
+    .change {
+      .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+  }
+  .menu__info {
+    display: block;
+    flex-direction: column;
+    button {
+      margin-bottom: 66px;
+    }
+    .menu__media {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+  }
+}
