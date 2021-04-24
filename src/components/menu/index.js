@@ -1,12 +1,12 @@
-import react, { useState } from 'react'
+import react, { useState } from "react";
 
-import logo from '../../assets/images/menu/Logo.svg'
+import logo from "../../assets/images/menu/Logo.svg";
 
 const Nav = () => {
-  const [activo, setActivo] = useState(false)
+  const [activo, setActivo] = useState(false);
 
   function toggleMenu() {
-    setActivo(!activo)
+    setActivo(!activo);
   }
 
   return (
@@ -22,25 +22,41 @@ const Nav = () => {
           </div>
         </div>
 
-        <div className={activo ? 'menu__info activo' : 'menu__info'}>
-          <button className="button button__primary">hacer reserva</button>
-          <p>Talcahuano 6960 (S3004JEL) Santa Fe, Provincia de Santa Fe, Argentina</p>
-          <br></br>
-          <p>+54 9 3425 66-2175</p>
-          <br></br>
-          <p>contacto@margot.com</p>
-          <ul className="menu__media">
-            <li>
-              <a href="https://www.instagram.com/margot_e.c/?hl=en">INSTAGRAM</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/margotrestostafe/">FACEBOOK</a>
-            </li>
-          </ul>
+        <div className={activo ? "menu__info activo" : "menu__info"}>
+          <div className="row justify-content-evenly">
+            <div className="col-12 col-sm-6 col-md-5">
+              <button className="button button-primary">HACER RESERVA</button>
+            </div>
+
+            <div className="direccion col-12 col-sm-6 col-md-3">
+              <div>
+                <p>
+                  Talcahuano 6960 (S3004JEL) Santa Fe, Provincia de Santa Fe,
+                  Argentina
+                </p>
+                <p>+54 9 3425 66-2175</p>
+                <p>contacto@margot.com</p>
+              </div>
+              <div>
+                <ul className="menu__media">
+                  <li>
+                    <a href="https://www.instagram.com/margot_e.c/?hl=en">
+                      INSTAGRAM
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/margotrestostafe/">
+                      FACEBOOK
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
