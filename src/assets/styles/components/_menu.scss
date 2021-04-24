@@ -12,9 +12,9 @@
   }
 
   .menu__hamburger {
-    display: block;
-    cursor: pointer;
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 20px;
 
     .bar1,
     .bar2,
