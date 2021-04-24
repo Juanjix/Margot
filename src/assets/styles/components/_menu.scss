@@ -6,8 +6,9 @@
   flex-direction: column;
 
   .menu__logo {
-    padding-bottom: 80px;
-    padding-top: 30px;
+    position: relative;
+    padding: 30px 0;
+    z-index: 9001;
   }
 
   .menu__hamburger {
@@ -44,9 +45,26 @@
       }
     }
   }
+
   .menu__info {
     display: block;
-    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 120px;
+    background-color: map-get($colors, mineral);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9000;
+
+    &.activo {
+      opacity: 1;
+      visibility: visible;
+    }
+
     button {
       margin-bottom: 66px;
     }
@@ -57,9 +75,5 @@
       padding-top: 40px;
       padding-bottom: 30px;
     }
-  }
-
-  .menu__style {
-    display: none;
   }
 }
