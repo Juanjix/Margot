@@ -1,25 +1,18 @@
 import logo from "../../assets/images/menu/Logo.svg";
 const Nav = () => {
-  function changeMenu() {
-    var menu = document.getElementsByClassName("menu__info");
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
-    }
-  }
+  function changeMenu() {}
   return (
     <div className="menu">
       <div className="container">
         <div className="menu__logo">
           <img src={logo} alt="logo"></img>
-          <div className="menu__hamburger">
+          <div className="menu__hamburger" onClick={changeMenu}>
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
           </div>
         </div>
-        <div className="menu__info">
+        <div className="menu__info" id="myDIV">
           <button className="button button__primary">hacer reserva</button>
           <p>
             Talcahuano 6960 (S3004JEL) Santa Fe, Provincia de Santa Fe,

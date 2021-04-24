@@ -46,15 +46,20 @@
   }
   .menu__info {
     display: block;
-    flex-direction: column;
+    flex-direction: row;
     button {
       margin-bottom: 66px;
     }
+
     .menu__media {
       display: flex;
       justify-content: space-evenly;
       padding-top: 40px;
       padding-bottom: 30px;
     }
+  }
+
+  .menu__style {
+    display: none;
   }
 }
