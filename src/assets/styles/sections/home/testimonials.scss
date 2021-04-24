@@ -6,6 +6,30 @@
     max-width: 928px;
   }
 
+  .testimonials__carousel {
+
+    .slick-arrow {
+      position: absolute;
+      top: calc(100% + 48px); 
+
+      // Posicionamos las flechas izquierda y derecha
+      &.slick-prev {
+        left: 112px;
+      }
+
+      &.slick-next {
+        right: 112px;
+      }
+
+      // Quitamos las flechas que vienen por defecto
+      &:before,
+      &:after {
+        content: '';
+        display: none;
+      }
+    }
+  }
+
   .testimonio {
     display: flex;
     flex-wrap: wrap;
