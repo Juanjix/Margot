@@ -20,6 +20,7 @@
 @import "./sections//home/sustantable.scss";
 @import "./sections/home/testimonials.scss";
 @import "./sections/home/offer.scss";
+@import "./sections//home//revolucion.scss";
 
 // Screens
 @import "./pages/home/home.scss";
@@ -92,13 +93,5 @@ body {
     color: map-get($colors, trigo);
     font-weight: 600;
     text-decoration-line: underline;
-  }
-  .button-primary {
-    text-transform: uppercase;
-    margin-bottom: 74px;
-    background-color: map-get($colors, mineral);
-    color: map-get($colors, arroz);
-    padding: 12px 24px;
-    border: 1px solid map-get($colors, arroz);
   }
 }
