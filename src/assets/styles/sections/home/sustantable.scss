@@ -13,7 +13,8 @@
     }
   }
 
-  .sus-title {
+  .sus__title {
+    color: map-get($colors, trigo);
     margin-bottom: 48px;
   }
 
@@ -34,13 +35,13 @@
     margin: 32px 0px 32px;
     align-items: center;
 
-    .step-num {
+    .step__num {
       font-size: 72px;
       padding-right: 32px;
-      color: map-get($colors, olivo);
+      color: map-get($colors, musgo);
     }
 
-    .step-text {
+    .step__text {
       font-weight: 400;
       color: map-get($colors, arroz);
     }

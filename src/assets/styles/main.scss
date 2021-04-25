@@ -80,12 +80,4 @@ body {
     font-weight: 600;
     text-decoration-line: underline;
   }
-  .button-primary {
-    text-transform: uppercase;
-    margin-bottom: 74px;
-    background-color: map-get($colors, mineral);
-    color: map-get($colors, arroz);
-    padding: 12px 24px;
-    border: 1px solid map-get($colors, arroz);
-  }
 }

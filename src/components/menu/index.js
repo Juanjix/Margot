@@ -1,13 +1,13 @@
-import react, { useState } from "react";
-
+import { useState } from "react";
+//Logo
 import logo from "../../assets/images/menu/Logo.svg";
 
 const Nav = () => {
   const [activo, setActivo] = useState(false);
 
-  function toggleMenu() {
+  const toggleMenu = () => {
     setActivo(!activo);
-  }
+  };
 
   return (
     <div className="menu">
@@ -25,7 +25,7 @@ const Nav = () => {
         <div className={activo ? "menu__info activo" : "menu__info"}>
           <div className="row justify-content-evenly">
             <div className="col-12 col-sm-6 col-md-5">
-              <button className="button button-primary">HACER RESERVA</button>
+              <button className="button button__primary">HACER RESERVA</button>
             </div>
 
             <div className="direccion col-12 col-sm-6 col-md-3">

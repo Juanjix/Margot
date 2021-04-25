@@ -25,3 +25,16 @@
     }
   }
 }
+.button__secondary {
+  color: map-get($colors, mineral);
+
+  &:focus {
+    outline: 4px solid #7f8d74;
+  }
+  &:disabled {
+    color: map-get($colors, madera);
+  }
+  &:pressed {
+    color: map-get($colors, musgo);
+  }
+}

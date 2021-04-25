@@ -7,27 +7,35 @@
     padding: 160px 0;
   }
 
-  .offer-title {
+  .offer__title {
+    color: map-get($colors, olivo);
     text-transform: uppercase;
     padding-bottom: 16px;
   }
-  .offer-reserva {
+  .offer__text {
+    color: map-get($colors, olivo);
+  }
+  .offer__reserva {
     a {
       color: map-get($colors, mineral);
+      margin-bottom: 4px;
     }
     padding-bottom: 4px;
     text-transform: uppercase;
     text-decoration: underline;
+    :hover {
+      color: map-get($colors, olivo);
+    }
   }
 
-  .offer-cards {
+  .offer__cards {
     display: flex;
     margin-top: 54px;
 
     @include response(medium) {
       margin-top: 118px;
     }
-    
+
     .card {
       flex-shrink: 0;
       background-color: map-get($colors, arroz);
@@ -40,17 +48,17 @@
       &:last-child {
         margin-right: 0;
       }
-      
+
       img {
         object-fit: cover;
       }
-      .card-title {
+      .card__title {
         font-weight: 600;
         text-transform: uppercase;
         margin-top: 32px;
         padding: 0px 40px;
       }
-      .card-text {
+      .card__text {
         padding: 0px 40px;
       }
     }

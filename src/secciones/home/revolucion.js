@@ -10,8 +10,8 @@ const Revolucion = () => {
       <div className="container">
         <div className="revolucion__title">
           <h2>
-            “Revolución es cultivar tu propio alimento, amarlo ytransformarlo en
-            un despertador de conciencia”
+            “Revolución es cultivar tu propio alimento, amarlo y transformarlo
+            en un despertador de conciencia”
           </h2>
           <div className="revolucion__owner">
             <p>
