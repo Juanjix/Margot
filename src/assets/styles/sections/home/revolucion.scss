@@ -1,0 +1,22 @@
+.revolucion {
+  background-color: map-get($colors, olivo);
+  color: map-get($colors, arroz);
+  padding: 48px 0px;
+
+  .revolucion__image {
+    text-align: end;
+    mix-blend-mode: luminosity;
+  }
+  .revolucion__image2 {
+    mix-blend-mode: luminosity;
+  }
+
+  .revolucion__title {
+    text-align: center;
+    padding: 24px 0px;
+  }
+  .revolucion__owner {
+    font-weight: 600;
+    margin: 0;
+  }
+}

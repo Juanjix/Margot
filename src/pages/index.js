@@ -11,6 +11,8 @@ import Experience from "../secciones/home/experience";
 import Sustentable from "../secciones/home/sustentable";
 import Testimonials from "../secciones/home/testimonials";
 import Offer from "../secciones/home/offer";
+import Revolucionn from "../secciones/home/revolucion";
+import Revolucion from "../secciones/home/revolucion";
 //aca voy a importar todas las secciones de mi pagina
 
 const Home = () => {
@@ -20,6 +22,7 @@ const Home = () => {
       <Hero />
       <Offer />
       <Sustentable />
+      <Revolucion />
       <Experience />
       <Testimonials />
       <Footer />

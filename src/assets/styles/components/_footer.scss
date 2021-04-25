@@ -38,15 +38,18 @@
     padding: 120px 0;
   }
 
+  :hoverbutton {
+    background-color: white;
+  }
+
   .titulo {
     margin-top: 40px;
     margin-bottom: 74px;
   }
 
   .direccion {
-
     @include response(medium) {
-      margin-top: 60px; 
+      margin-top: 60px;
     }
   }
 
