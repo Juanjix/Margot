@@ -1,15 +1,38 @@
 .hero {
+  padding-bottom: 72px;
   background-color: map-get($colors, mineral);
   color: map-get($colors, arroz);
-  text-align: center;
-  padding-bottom: 162px;
 
-  img {
-    padding: 72px 0px 104px;
-    margin: 0;
+  @include response(small) {
+    padding-bottom: 168px;
   }
 
-  .hero__paragraph {
-    font-weight: 600;
+  @include response(medium) {
+    padding-bottom: 120px;
+  }
+
+  .hero__scrolling-area {
+    height: 125vw;
+    margin-bottom: 80px;
+
+    .area {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  h1 {
+    position: relative;
+    margin: 120px 0;
+    text-transform: uppercase;
+    z-index: 90;
+  }
+
+  .hero__imagenes {
+    text-align: center;
+
+    img {
+      // transition: all 0.3s ease;
+    }
   }
 }

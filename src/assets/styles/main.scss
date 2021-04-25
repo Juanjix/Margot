@@ -69,6 +69,20 @@ body {
       font-weight: 500;
     }
   }
+
+  p {
+
+    &.paragraph--large {
+      font-size: 20px;
+      line-height: 32px;
+
+      @include response(medium) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
