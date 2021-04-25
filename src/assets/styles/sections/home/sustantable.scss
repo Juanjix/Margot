@@ -32,10 +32,11 @@
     display: flex;
     align-self: flex-start;
     margin: 32px 0px 32px;
+    align-items: center;
 
     .step-num {
       font-size: 72px;
-      padding-right: 16px;
+      padding-right: 32px;
       color: map-get($colors, olivo);
     }
 

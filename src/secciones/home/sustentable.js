@@ -44,6 +44,7 @@ const Sustentable = () => {
               </p>
             </div>
           </div>
+          <div className="separador"></div>
         </div>
       </div>
     </div>
