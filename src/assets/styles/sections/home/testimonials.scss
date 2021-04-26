@@ -42,6 +42,7 @@
   }
 
   .testimonio {
+    flex-wrap: wrap;
     align-items: center;
 
     p {
@@ -70,7 +71,11 @@
     }
 
     .testimonio__autor {
-      margin-top: 32px;
+      white-space: nowrap;
+
+      @include response(medium) {
+        margin-top: 32px;
+      }
 
       .separador {
         width: 40px;
@@ -79,6 +84,7 @@
       }
 
       span {
+        display: block;
         text-transform: uppercase;
       }
     }

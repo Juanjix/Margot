@@ -1,27 +1,27 @@
-import img from "../../assets/images/spa/Rodrigo.jpg";
-import img2 from "../../assets/images/spa/Gabriel.jpg";
-import img3 from "../../assets/images/spa/Monique.jpg";
-import { ReactComponent as IconBack } from "../../assets/icons/Back.svg";
-import { ReactComponent as IconNext } from "../../assets/icons/Next.svg";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import img from '../../assets/images/spa/Rodrigo.jpg'
+import img2 from '../../assets/images/spa/Gabriel.jpg'
+import img3 from '../../assets/images/spa/Monique.jpg'
+import { ReactComponent as IconBack } from '../../assets/icons/Back.svg'
+import { ReactComponent as IconNext } from '../../assets/icons/Next.svg'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import Slider from 'react-slick'
 
 const ArrowBack = (props) => {
   return (
     <button className={props.className} onClick={props.onClick}>
       <IconBack />
     </button>
-  );
-};
+  )
+}
 
 const ArrowNext = (props) => {
   return (
     <button className={props.className} onClick={props.onClick}>
       <IconNext />
     </button>
-  );
-};
+  )
+}
 
 const Testimonials = () => {
   var settings = {
@@ -30,20 +30,16 @@ const Testimonials = () => {
     speed: 300,
     slidesToShow: 1,
     prevArrow: <ArrowBack />,
-    nextArrow: <ArrowNext />,
-  };
+    nextArrow: <ArrowNext />
+  }
   return (
     <section className="spa">
       <div className="container">
         <Slider {...settings} className="testimonials__carousel">
           {/* Testimonio 1:start */}
-          <div className="testimonio">
+          <div className="testimonio d-flex">
             <div className="testimonio__frase font-weight--500">
-              <p>
-                Margot és un SPA GASTRONÓMICO, un lugar ideado a la perfección
-                con una propuesta única en Argentina. Producto autóctono y
-                técnicas precisas en un marco de estilo y confort.
-              </p>
+              <p>Margot és un SPA GASTRONÓMICO, un lugar ideado a la perfección con una propuesta única en Argentina. Producto autóctono y técnicas precisas en un marco de estilo y confort.</p>
 
               <p className="testimonio__autor d-none d-md-flex align-items-center color--olivo">
                 <span className="font-weight--600">Rodrigo Calderón</span>
@@ -53,11 +49,7 @@ const Testimonials = () => {
               </p>
             </div>
 
-            <img
-              className="testimonio__imagen"
-              src={img}
-              alt="Rodrigo Calderón"
-            />
+            <img className="testimonio__imagen" src={img} alt="Rodrigo Calderón" />
 
             <p className="testimonio__autor d-md-none color--olivo">
               <span className="font-weight--600">Rodrigo Calderón</span>
@@ -66,15 +58,9 @@ const Testimonials = () => {
           </div>
           {/* Testimonio 1:end */}
           {/* Testimonio 2:start */}
-          <div className="testimonio">
+          <div className="testimonio d-flex">
             <div className="testimonio__frase font-weight--500">
-              <p>
-                La fermentación coloca a los alimentos en un lugar único entre
-                lo crudo y lo cocido. Margot produce e incorpora alimentos
-                fermentados a su carta, dejando a sus platos en ese lugar único
-                que solo los microorganismos saben hacer. Curiosidad e
-                innovación con conocimiento.
-              </p>
+              <p>La fermentación coloca a los alimentos en un lugar único entre lo crudo y lo cocido. Margot produce e incorpora alimentos fermentados a su carta, dejando a sus platos en ese lugar único que solo los microorganismos saben hacer. Curiosidad e innovación con conocimiento.</p>
 
               <p className="testimonio__autor d-none d-md-flex align-items-center color--olivo">
                 <span className="font-weight--600">Dr. Gabriel Vinderola</span>
@@ -84,11 +70,7 @@ const Testimonials = () => {
               </p>
             </div>
 
-            <img
-              className="testimonio__imagen"
-              src={img2}
-              alt="Dr. Gabriel Vinderola"
-            />
+            <img className="testimonio__imagen" src={img2} alt="Dr. Gabriel Vinderola" />
 
             <p className="testimonio__autor d-md-none color--olivo">
               <span className="font-weight--600">Dr. Gabriel Vinderola</span>
@@ -97,12 +79,9 @@ const Testimonials = () => {
           </div>
           {/* Testimonio 2:end */}
           {/* Testimonio 3:start */}
-          <div className="testimonio">
+          <div className="testimonio d-flex">
             <div className="testimonio__frase font-weight--500">
-              <p>
-                One of the coolest places in Santa Fe. Thank you for delicious,
-                unique menu and hospitality 💚 Much love friends 😍
-              </p>
+              <p>One of the coolest places in Santa Fe. Thank you for delicious, unique menu and hospitality 💚 Much love friends 😍</p>
 
               <p className="testimonio__autor d-none d-md-flex align-items-center color--olivo">
                 <span className="font-weight--600">Miss Monique</span>
@@ -123,6 +102,6 @@ const Testimonials = () => {
         </Slider>
       </div>
     </section>
-  );
-};
-export default Testimonials;
+  )
+}
+export default Testimonials
