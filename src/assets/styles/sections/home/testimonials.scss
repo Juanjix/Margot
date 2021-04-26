@@ -7,10 +7,9 @@
   }
 
   .testimonials__carousel {
-
     .slick-arrow {
       position: absolute;
-      top: calc(100% + 48px); 
+      top: calc(100% + 48px);
 
       @include response(small) {
         top: 50%;
@@ -36,15 +35,13 @@
       // Quitamos las flechas que vienen por defecto
       &:before,
       &:after {
-        content: '';
+        content: "";
         display: none;
       }
     }
   }
 
   .testimonio {
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
 
     p {
