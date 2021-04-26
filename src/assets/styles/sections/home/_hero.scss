@@ -1,7 +1,9 @@
 .hero {
+  max-width: 100vw;
   padding-bottom: 72px;
   background-color: map-get($colors, mineral);
   color: map-get($colors, arroz);
+  // overflow-x: hidden;
 
   @include response(small) {
     padding-bottom: 168px;
@@ -12,8 +14,11 @@
   }
 
   .hero__scrolling-area {
-    height: 125vw;
     margin-bottom: 80px;
+
+    @include response(medium) {
+      height: 150vw;
+    }
 
     .area {
       position: sticky;
@@ -28,11 +33,61 @@
     z-index: 90;
   }
 
-  .hero__imagenes {
-    text-align: center;
+  .hero__carousel {
+    display: flex;
 
-    img {
-      // transition: all 0.3s ease;
+    .slick-dots {
+      bottom: -24px;
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+
+
+      li {
+        width: 8px;
+        height: 8px;
+        margin: 0 20px 0 0;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &.slick-active {
+
+          button {
+            background-color: map-get($colors, musgo);
+          }
+        }
+
+        button {
+          width: 100%;
+          height: 100%;
+          background-color: map-get($colors, olivo);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .hero__images {
+
+    .img {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+      &.visible {
+        opacity: 1;
+      }
+
+      &:first-child {
+        margin-right: 16px;
+      }
+
+      &:last-child  {
+        margin-left: 16px;
+      }
     }
   }
 }

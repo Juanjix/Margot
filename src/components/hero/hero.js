@@ -14,31 +14,57 @@ import img2 from '../../assets/images/hero/img2.jpg'
 import img3 from '../../assets/images/hero/img3.jpg'
 
 const Hero = () => {
-  // Ref crea una referencia que podemos usar para
-  // manipular un elemento. Funciona de manera similar a document.getElementById
-  const ref = React.createRef()
+  // ANIMACIÓN
+  // Si este estado es true, en Desktop mostramos todas las imagenes.
+  // Si es false, no las mostramos.
+  const [showAllImages, setShowAllImages] = useState(false)
 
   const handleScroll = () => {
+    const image = document.getElementById('heroImg')
+    const imageSize = 352
     const windowWidth = window.innerWidth
-    const imageSize = 328
     const scrollPosition = window.scrollY
 
-    const delta = (windowWidth - scrollPosition) / 328
+    let delta = (windowWidth - scrollPosition) / imageSize
+    console.log(delta)
+
+    if (delta > 1 && showAllImages) {
+      setShowAllImages(false)
+    }
+
+    if (delta <= 1 && !showAllImages) {
+      delta = 1 // Redondeo
+      setShowAllImages(true)
+    }
 
     if (scrollPosition <= windowWidth && delta >= 1) {
-      if (ref.current) {
-        ref.current.style.transform = 'scale(' + delta + ')'
+      if (image) {
+        image.style.transform = 'scale(' + delta + ')'
       }
     }
   }
 
   // Agregamos el oyente del scroll
   useEffect(() => {
-    document.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll()
+    const windowWidth = window.innerWidth
 
-    return () => document.removeEventListener('scroll', handleScroll)
-  }, [])
+    if (windowWidth >= 1024) {
+      document.addEventListener('scroll', handleScroll, { passive: true })
+      handleScroll()
+
+      return () => document.removeEventListener('scroll', handleScroll)
+    }
+
+    return null
+  }, [handleScroll])
+
+  const carouselConfig = {
+    infinite: true,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000
+  }
 
   return (
     <section className="hero">
@@ -46,15 +72,25 @@ const Hero = () => {
         <div className="hero__scrolling-area">
           <div className="area">
             <Nav />
-
             <h1 className="text-center font-weight--300">
               En cada plato, <br />
               <span className="font-weight--700">una nueva emoción</span>
             </h1>
+            {/* Mobile Carousel:start */}
+            <Slider className="hero__carousel d-md-none" {...carouselConfig}>
+              <img src={img} alt="Margot" />
+              <img src={img2} alt="Margot" />
+              <img src={img3} alt="Margot" />
+            </Slider>
+            {/* Mobile carousel:end */}
 
-            <div className="hero__imagenes">
-              <img ref={ref} src={img} alt="Margot" />
+            {/* Desktop images with animation:start */}
+            <div className="hero__images d-none d-md-flex">
+              <img className={showAllImages ? 'img visible' : 'img'} src={img2} alt="Margot" />
+              <img id="heroImg" src={img} alt="Margot" />
+              <img className={showAllImages ? 'img visible' : 'img'} src={img3} alt="Margot" />
             </div>
+            {/* Desktop images with animation:end */}
           </div>
         </div>
 
