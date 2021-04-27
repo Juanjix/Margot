@@ -4,9 +4,9 @@
   color: #e5e5d6;
   font-weight: 600;
   border: 1px solid #e5e5d6;
+  text-decoration: none!important;
 
   &.button__primary {
-    background-color: #263230;
     text-transform: uppercase;
     border: 1px solid #e5e5d6;
     transition: all 0.3s ease;

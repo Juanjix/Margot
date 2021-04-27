@@ -93,6 +93,6 @@ body {
   a {
     color: map-get($colors, trigo);
     font-weight: 600;
-    text-decoration-line: underline;
+    text-decoration: none;
   }
 }

@@ -1,83 +1,84 @@
 .menu {
-  background-color: map-get($colors, mineral);
-  color: map-get($colors, arroz);
-  text-align: center;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  z-index: 9000;
 
-  .menu__logo {
-    position: relative;
-    padding: 30px 0;
-    z-index: 9001;
+  @include response(medium) {
+    padding: 60px 0;
   }
 
-  .menu__hamburger {
+  .menu__links-lenguajes {
     position: absolute;
-    right: 0;
-    top: 20px;
-
-    .bar1,
-    .bar2,
-    .bar3 {
-      width: 35px;
-      height: 5px;
-      background-color: map-get($colors, arroz);
-      margin: 6px 0;
-      transition: 0.4s;
-    }
-    .change {
-      .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-      }
-    }
-
-    .change {
-      .bar2 {
-        opacity: 0;
-      }
-    }
-
-    .change {
-      .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-      }
-    }
-  }
-
-  .menu__info {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
     left: 0;
-    bottom: 0;
-    padding-top: 120px;
-    background-color: map-get($colors, mineral);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 9000;
+    text-transform: uppercase;
 
-    &.activo {
-      opacity: 1;
-      visibility: visible;
+    .separador {
+      width: 32px;
+      height: 1px;
+      margin: 0 12px;
+      background-color: map-get($colors, olivo);
+      transform: rotate(-60deg);
     }
 
-    button {
-      margin-bottom: 66px;
+    a {
+      color: map-get($colors, arroz);
+      text-decoration: none;
+    }
+  }
+
+  .menu__toggler {
+    width: 24px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    border: 0;
+    background: none;
+
+    @include response(medium) {
+      display: none;
     }
 
-    .menu__media {
-      display: flex;
-      justify-content: space-evenly;
-      padding-top: 40px;
-      padding-bottom: 30px;
+    &.menu__toggler--activo {
 
-      :hover {
-        color: map-get($colors, musgo);
+      span {
+
+        &:first-child() {
+          top: 9px;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          top: -9px;
+          transform: rotate(-45deg);
+        }
       }
     }
+
+    span {
+      width: 100%;
+      height: 2px;
+      position: relative;
+      margin-bottom: 7px;
+      background-color: map-get($colors, arroz);
+      transition: all 0.3s ease;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .menu__button-reserva {
+    position: absolute;
+    right: 0;
   }
 }
