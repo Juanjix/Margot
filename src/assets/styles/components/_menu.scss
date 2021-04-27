@@ -81,4 +81,45 @@
     position: absolute;
     right: 0;
   }
+
+  .menu__content {
+    height: calc(100vh - 100%);
+    position: absolute;
+    top: 100%;
+    padding-top: 32px;
+    background-color: map-get($colors, mineral);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+
+    &--activo {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .footer {
+      padding: 0;
+      background: transparent;
+
+      ul {
+
+        @include response(small) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .menu__reserva {
+      margin-bottom: 50px;
+
+      @include response(small) {
+        margin: 0;
+      }
+    }
+
+    .menu__links-lenguajes {
+      position: relative;
+    }
+  }
 }
