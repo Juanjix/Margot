@@ -55,8 +55,9 @@ const Hero = () => {
 
       return () => document.removeEventListener('scroll', handleScroll)
     }
+
     return null
-  }, [])
+  })
 
   const carouselConfig = {
     infinite: true,
