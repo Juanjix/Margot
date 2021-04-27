@@ -22,32 +22,31 @@ const Hero = () => {
   // Si es false, no las mostramos.
   const [showAllImages, setShowAllImages] = useState(false)
 
-  const handleScroll = () => {
-    const image = document.getElementById('heroImg')
-    const imageSize = 352
-    const windowWidth = window.innerWidth
-    const scrollPosition = window.scrollY
-
-    let delta = (windowWidth - scrollPosition) / imageSize
-
-    if (delta > 1 && showAllImages) {
-      setShowAllImages(false)
-    }
-
-    if (delta <= 1 && !showAllImages) {
-      delta = 1 // Redondeo
-      setShowAllImages(true)
-    }
-
-    if (scrollPosition <= windowWidth && delta >= 1) {
-      if (image) {
-        image.style.transform = 'scale(' + delta + ')'
-      }
-    }
-  }
-
   // Agregamos el oyente del scroll
   useEffect(() => {
+    const handleScroll = () => {
+      const image = document.getElementById('heroImg')
+      const imageSize = 352
+      const windowWidth = window.innerWidth
+      const scrollPosition = window.scrollY
+
+      let delta = (windowWidth - scrollPosition) / imageSize
+
+      if (delta > 1 && showAllImages) {
+        setShowAllImages(false)
+      }
+
+      if (delta <= 1 && !showAllImages) {
+        delta = 1 // Redondeo
+        setShowAllImages(true)
+      }
+
+      if (scrollPosition <= windowWidth && delta >= 1) {
+        if (image) {
+          image.style.transform = 'scale(' + delta + ')'
+        }
+      }
+    }
     const windowWidth = window.innerWidth
 
     if (windowWidth >= 1024) {
@@ -56,9 +55,8 @@ const Hero = () => {
 
       return () => document.removeEventListener('scroll', handleScroll)
     }
-
     return null
-  }, [handleScroll])
+  }, [])
 
   const carouselConfig = {
     infinite: true,
