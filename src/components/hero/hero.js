@@ -26,7 +26,6 @@ const Hero = () => {
     const scrollPosition = window.scrollY
 
     let delta = (windowWidth - scrollPosition) / imageSize
-    console.log(delta)
 
     if (delta > 1 && showAllImages) {
       setShowAllImages(false)

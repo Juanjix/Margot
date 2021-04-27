@@ -1,11 +1,19 @@
-import img from '../../assets/images/spa/Rodrigo.jpg'
-import img2 from '../../assets/images/spa/Gabriel.jpg'
-import img3 from '../../assets/images/spa/Monique.jpg'
-import { ReactComponent as IconBack } from '../../assets/icons/Back.svg'
-import { ReactComponent as IconNext } from '../../assets/icons/Next.svg'
+// Libraries
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
+
+// Images
+import Rodrigo from '../../assets/images/testimonials/rodrigo-calderon.png'
+import Rodrigo2X from '../../assets/images/testimonials/rodrigo-calderon@2x.png'
+import Gabriel from '../../assets/images/testimonials/gabriel-vinderola.png'
+import Gabriel2X from '../../assets/images/testimonials/gabriel-vinderola@2x.png'
+import MissMonique from '../../assets/images/testimonials/miss-monique.png'
+import MissMonique2X from '../../assets/images/testimonials/miss-monique@2x.png'
+
+// Icons
+import { ReactComponent as IconBack } from '../../assets/icons/Back.svg'
+import { ReactComponent as IconNext } from '../../assets/icons/Next.svg'
 
 const ArrowBack = (props) => {
   return (
@@ -49,7 +57,7 @@ const Testimonials = () => {
               </p>
             </div>
 
-            <img className="testimonio__imagen" src={img} alt="Rodrigo Calderón" />
+            <img className="testimonio__imagen" src={Rodrigo} srcSet={Rodrigo2X + ' 2x'} alt="Rodrigo Calderón" />
 
             <p className="testimonio__autor d-md-none color--olivo">
               <span className="font-weight--600">Rodrigo Calderón</span>
@@ -70,7 +78,7 @@ const Testimonials = () => {
               </p>
             </div>
 
-            <img className="testimonio__imagen" src={img2} alt="Dr. Gabriel Vinderola" />
+            <img className="testimonio__imagen" src={Gabriel} srcSet={Gabriel2X + ' 2x'} alt="Gabriel Vinderola" />
 
             <p className="testimonio__autor d-md-none color--olivo">
               <span className="font-weight--600">Dr. Gabriel Vinderola</span>
@@ -91,7 +99,7 @@ const Testimonials = () => {
               </p>
             </div>
 
-            <img className="testimonio__imagen" src={img3} alt="Miss Monique" />
+            <img className="testimonio__imagen" src={MissMonique} srcSet={MissMonique2X + ' 2x'} alt="Miss Monique" />
 
             <p className="testimonio__autor d-md-none color--olivo">
               <span className="font-weight--600">Miss Monique</span>

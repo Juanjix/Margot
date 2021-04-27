@@ -61,6 +61,8 @@
 
     .testimonio__imagen {
       margin-right: 16px;
+      mix-blend-mode: luminosity;
+      opacity: 0.6;
 
       @include response(medium) {
         order: 0;
