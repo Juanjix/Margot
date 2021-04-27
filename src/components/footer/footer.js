@@ -8,7 +8,9 @@ const Footer = () => {
           <div className="col-12 col-sm-6 col-md-5">
             <img src={Logo} alt="logo" width="106px" height="16px"></img>
             <h3 className="titulo">EN CADA PLATO UNA EMOCION</h3>
-            <button className="button button__primary">HACER RESERVA</button>
+            <button className="btn button button__primary btn">
+              HACER RESERVA
+            </button>
           </div>
 
           <div className="direccion col-12 col-sm-6 col-md-5">

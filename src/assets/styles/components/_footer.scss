@@ -22,6 +22,10 @@
     margin-bottom: 74px;
   }
 
+  .footer__btn {
+    background-color: map-get($colors, mineral);
+  }
+
   .direccion {
     @include response(medium) {
       margin-top: 60px;
