@@ -3,7 +3,6 @@
   padding-bottom: 72px;
   background-color: map-get($colors, mineral);
   color: map-get($colors, arroz);
-  // overflow-x: hidden;
 
   @include response(small) {
     padding-bottom: 168px;
@@ -75,6 +74,7 @@
   .hero__images {
 
     .img {
+      width: 352px;
       opacity: 0;
       transition: opacity 0.3s ease;
 
@@ -82,12 +82,19 @@
         opacity: 1;
       }
 
+      &.img__animated {
+        // padding-bottom: 100%; // Esto la hace cuadrada
+        background-image: url('../../../../assets/images/hero/hero-image-2@2x.png'); // Usamos el 2x para que se vea bien cuando se estire.
+        background-size: cover;
+        background-position: center;
+      }
+
       &:first-child {
-        margin-right: 16px;
+        margin-right: 32px;
       }
 
       &:last-child  {
-        margin-left: 16px;
+        margin-left: 32px;
       }
     }
   }

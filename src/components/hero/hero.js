@@ -9,9 +9,12 @@ import Slider from 'react-slick'
 import Nav from '../../components/menu/'
 
 // Images
-import img from '../../assets/images/hero/Img.jpg'
-import img2 from '../../assets/images/hero/img2.jpg'
-import img3 from '../../assets/images/hero/img3.jpg'
+import Image1 from '../../assets/images/hero/hero-image-1.png'
+import Image12X from '../../assets/images/hero/hero-image-1@2x.png'
+import Image2 from '../../assets/images/hero/hero-image-2.png'
+import Image22X from '../../assets/images/hero/hero-image-2@2x.png'
+import Image3 from '../../assets/images/hero/hero-image-3.png'
+import Image32X from '../../assets/images/hero/hero-image-3@2x.png'
 
 const Hero = () => {
   // ANIMACIÓN
@@ -77,17 +80,17 @@ const Hero = () => {
             </h1>
             {/* Mobile Carousel:start */}
             <Slider className="hero__carousel d-md-none" {...carouselConfig}>
-              <img src={img} alt="Margot" />
-              <img src={img2} alt="Margot" />
-              <img src={img3} alt="Margot" />
+              <img src={Image1} srcSet={Image12X + ' 2x'} alt="Margot" />
+              <img src={Image2} srcSet={Image22X + ' 2x'} alt="Margot" />
+              <img src={Image3} srcSet={Image32X + ' 2x'} alt="Margot" />
             </Slider>
             {/* Mobile carousel:end */}
 
             {/* Desktop images with animation:start */}
             <div className="hero__images d-none d-md-flex">
-              <img className={showAllImages ? 'img visible' : 'img'} src={img2} alt="Margot" />
-              <img id="heroImg" src={img} alt="Margot" />
-              <img className={showAllImages ? 'img visible' : 'img'} src={img3} alt="Margot" />
+              <img className={showAllImages ? 'img visible' : 'img'} src={Image1} srcSet={Image12X + ' 2x'} alt="Margot" />
+              <div id="heroImg" className="img visible img__animated"></div>
+              <img className={showAllImages ? 'img visible' : 'img'} src={Image3} srcSet={Image32X + ' 2x'} alt="Margot" />
             </div>
             {/* Desktop images with animation:end */}
           </div>
