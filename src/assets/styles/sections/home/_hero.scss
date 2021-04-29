@@ -26,7 +26,7 @@
     }
   }
 
-  h1 {
+  h2 {
     position: relative;
     margin: 120px 0;
     text-transform: uppercase;
@@ -34,13 +34,11 @@
   }
 
   .hero__carousel {
-
     .slick-dots {
       bottom: -24px;
-      display: flex!important;
+      display: flex !important;
       align-items: center;
       justify-content: center;
-
 
       li {
         width: 8px;
@@ -54,7 +52,6 @@
         }
 
         &.slick-active {
-
           button {
             background-color: map-get($colors, musgo);
           }
@@ -71,7 +68,6 @@
   }
 
   .hero__images {
-
     .img {
       width: 352px;
       opacity: 0;
@@ -83,7 +79,7 @@
 
       &.img__animated {
         // padding-bottom: 100%; // Esto la hace cuadrada
-        background-image: url('../../../../assets/images/hero/hero-image-2@2x.png'); // Usamos el 2x para que se vea bien cuando se estire.
+        background-image: url("../../../../assets/images/hero/hero-image-2@2x.png"); // Usamos el 2x para que se vea bien cuando se estire.
         background-size: cover;
         background-position: center;
       }
@@ -92,7 +88,7 @@
         margin-right: 32px;
       }
 
-      &:last-child  {
+      &:last-child {
         margin-left: 32px;
       }
     }

@@ -1,22 +1,36 @@
 .revolucion {
   background-color: map-get($colors, olivo);
   color: map-get($colors, arroz);
-  padding: 48px 0px;
+  padding: 72px 16px 72px;
+
+  @include response(small) {
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+  @include response(medium) {
+    padding: 72px 128px 72px;
+  }
+  @include response(large) {
+    padding: 120px 256px 92px;
+  }
 
   .revolucion__image {
-    text-align: end;
-    mix-blend-mode: luminosity;
+    img {
+      width: 100%;
+      text-align: center;
+    }
   }
-  .revolucion__image2 {
-    mix-blend-mode: luminosity;
-  }
-
   .revolucion__title {
     text-align: center;
-    padding: 24px 0px;
+    padding-top: 40px;
+
+    @include response(medium) {
+      padding-top: 64px;
+    }
   }
   .revolucion__owner {
     font-weight: 600;
     margin: 0;
+    padding-top: 40px;
   }
 }
