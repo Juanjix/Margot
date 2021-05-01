@@ -3,8 +3,9 @@
   padding: 12px 24px;
   color: #e5e5d6;
   font-weight: 600;
-  border: 1px solid #e5e5d6;
-  text-decoration: none!important;
+  border: 0px solid #e5e5d6;
+  text-decoration: none !important;
+  border-radius: 1px;
 
   &.button__primary {
     text-transform: uppercase;
@@ -27,6 +28,7 @@
 }
 .button__secondary {
   color: map-get($colors, mineral);
+  text-decoration: underline !important;
 
   &:focus {
     outline: 4px solid #7f8d74;

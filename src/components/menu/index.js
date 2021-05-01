@@ -49,7 +49,7 @@ const Menu = () => {
         <div className="footer">
           <div className="container">
             <div className="row justify-content-between text-center text-sm-left">
-              <div className="menu__reserva d-sm-flex flex-wrap col-12 col-sm-6">
+              <div className="menu__reserva d-sm-flex d-md-flex flex-wrap col-12 col-sm-6">
                 <div>
                   <a className="button button__primary" href="/">
                     Hacer reserva

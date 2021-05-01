@@ -44,9 +44,7 @@
     }
 
     &.menu__toggler--activo {
-
       span {
-
         &:first-child() {
           top: 9px;
           transform: rotate(45deg);
@@ -103,7 +101,6 @@
       background: transparent;
 
       ul {
-
         @include response(small) {
           margin-bottom: 0;
         }
