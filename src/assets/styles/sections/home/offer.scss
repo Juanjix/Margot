@@ -28,12 +28,33 @@
     }
   }
 
-  .offer__cards {
-    display: flex;
-    margin-top: 54px;
+  .offer__info {
+    margin-bottom: 54px;
 
     @include response(medium) {
-      margin-top: 118px;
+      margin-bottom: 118px;
+    }
+  }
+
+  .offer__cards {
+    display: flex;
+    overflow-x: auto;
+    cursor: none;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    #dragCursor {
+      display: none;
+      z-index: 8000;
+      pointer-events: none;
+      mix-blend-mode: multiply;
+
+      @include response(medium) {
+        position: absolute;
+        display: flex;
+      }
     }
 
     .card {
@@ -44,6 +65,7 @@
       margin-right: 18px;
       border: 1px solid map-get($colors, olivo);
       box-sizing: border-box;
+      user-select: none;
 
       &:last-child {
         margin-right: 0;
@@ -51,6 +73,7 @@
 
       img {
         object-fit: cover;
+        pointer-events: none;
       }
       .card__title {
         font-weight: 600;

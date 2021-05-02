@@ -1,0 +1,9 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:multiply">
+<circle cx="40" cy="40" r="40" fill="#E5E5D6"/>
+</g>
+<path d="M50 40H70" stroke="#4E603F" stroke-miterlimit="10"/>
+<path d="M63 33L70 40L63 47" stroke="#4E603F" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M30 40L10 40" stroke="#4E603F" stroke-miterlimit="10"/>
+<path d="M17 47L10 40L17 33" stroke="#4E603F" stroke-miterlimit="10" stroke-linecap="square"/>
+</svg>
