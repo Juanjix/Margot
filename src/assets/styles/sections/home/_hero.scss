@@ -11,6 +11,7 @@
 
   @include response(medium) {
     padding-bottom: 120px;
+    overflow: visible;
   }
 
   .hero__scrolling-area {
@@ -64,6 +65,10 @@
         background-image: url("../../../../assets/images/hero/hero-image-2@2x.png"); // Usamos el 2x para que se vea bien cuando se estire.
         background-size: cover;
         background-position: center;
+
+        @include response(medium) {
+          padding: 0;
+        }
       }
 
       &:first-child {
