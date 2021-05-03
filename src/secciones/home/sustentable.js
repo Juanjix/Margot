@@ -14,7 +14,7 @@ const Sustentable = () => {
             <div className="step__text">
               <p>
                 Colaboramos con productores locales y trabajamos el concepto de
-                milla cero. Ademas contamos con nuestra huerta agroecologica.
+                milla cero. Ademas contamos con nuestra huerta agroecológica.
               </p>
             </div>
           </div>
@@ -25,9 +25,9 @@ const Sustentable = () => {
             </div>
             <div className="step__text">
               <p>
-                Elaboramos nuestros platos de estación, donde se atiende al
-                concepto nose-to-tail con tecnología de punta y un equipo de
-                trabajo único.
+                Elaboramos nuestros platos de estación, atendiendo el concepto
+                nose-to-tail con tecnología de punta y un equipo de trabajo
+                único.
               </p>
             </div>
           </div>

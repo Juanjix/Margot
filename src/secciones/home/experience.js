@@ -58,7 +58,7 @@ const Experience = () => {
                     alt="consultoria"
                     srcSet={consultx2 + " 2x"}
                   ></img>
-                  <p className="titulo-exp">CONSULTORIA PROFESIONAL</p>
+                  <p className="titulo-exp">consultoría profesional</p>
                   <p>
                     Ofrecemos asesoramiento personalizado para emprendimientos
                     gastronómicos o afines al rubro.

@@ -5,9 +5,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="row justify-content-between">
-          <div className="col-12 col-sm-6 col-md-4">
+          <div className="col-12 col-sm-6 col-md-5">
             <img src={Logo} alt="logo" width="106px" height="16px"></img>
-            <h3 className="titulo">EN CADA PLATO UNA EMOCION</h3>
+            <h3 className="titulo">en cada plato una emoción</h3>
             <button className="footer__btn button button__primary btn">
               HACER RESERVA
             </button>
