@@ -115,7 +115,7 @@ const Hero = () => {
                 Amamos lo que hacemos e invertimos todo nuestro tiempo y energía
                 en una constante y perpetua búsqueda de la perfección. Por eso
                 diseñamos un espacio de exploración gastronómica donde ofrecemos
-                cocina auténtica e innovadora basada en productos locales de
+                una cocina auténtica e innovadora basada en productos locales de
                 calidad.
               </p>
             </div>
