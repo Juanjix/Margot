@@ -1,7 +1,12 @@
-import resto from "../../assets/images/experience/Img.jpg";
-import popUp from "../../assets/images/experience/Img2.jpg";
-import event from "../../assets/images/experience/Img3.jpg";
-import consult from "../../assets/images/experience/Img4.jpg";
+// imagenes
+import resto from "../../assets/images/experience/resto.jpg";
+import restox2 from "../../assets/images/experience/restox2.jpg";
+import popUp from "../../assets/images/experience/pop_up.jpg";
+import popUpx2 from "../../assets/images/experience/pop_upx2.jpg";
+import event from "../../assets/images/experience/event.jpg";
+import eventx2 from "../../assets/images/experience/eventx2.jpg";
+import consult from "../../assets/images/experience/consult.jpg";
+import consultx2 from "../../assets/images/experience/consultx2.jpg";
 
 const Experience = () => {
   return (
@@ -17,7 +22,7 @@ const Experience = () => {
               <div className="col-12 col-sm-6">
                 {/* Diferentes experiencias */}
                 <div className="exp">
-                  <img src={resto} alt="Menu"></img>
+                  <img src={resto} alt="Menu" srcSet={restox2 + " 2x"}></img>
                   <p className="titulo-exp">restaurante</p>
                   <p>
                     Día a día diseñamos menús degustación diferentes en base a
@@ -27,7 +32,7 @@ const Experience = () => {
               </div>
               <div className="col-12 col-sm-6">
                 <div className="exp">
-                  <img src={popUp} alt="pop-up"></img>
+                  <img src={popUp} alt="pop-up" srcSet={popUpx2 + " 2x"}></img>
                   <p className="titulo-exp">POP UP</p>
                   <p>
                     Invitamos a los principales referentes gastronómicos de la
@@ -38,7 +43,7 @@ const Experience = () => {
               </div>
               <div className="col-12 col-sm-6">
                 <div className="exp">
-                  <img src={event} alt="eventos"></img>
+                  <img src={event} alt="eventos" srcSet={eventx2 + " 2x"}></img>
                   <p className="titulo-exp">EVENTOS PRIVADOS Y CORPORATIVOS</p>
                   <p>
                     El espacio se encuentra disponible para todo tipo de evento
@@ -48,7 +53,11 @@ const Experience = () => {
               </div>
               <div className="col-12 col-sm-6">
                 <div className="exp">
-                  <img src={consult} alt="consultoria"></img>
+                  <img
+                    src={consult}
+                    alt="consultoria"
+                    srcSet={consultx2 + " 2x"}
+                  ></img>
                   <p className="titulo-exp">CONSULTORIA PROFESIONAL</p>
                   <p>
                     Ofrecemos asesoramiento personalizado para emprendimientos
