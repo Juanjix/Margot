@@ -114,8 +114,8 @@ class Offer extends React.Component {
   render = () => (
     <div className="offer">
       <div className="container">
-        <div className="row offer__info">
-          <div className="col-12 col-sm-6">
+        <div className="row offer__info justify-content-md-center">
+          <div className="col-12 col-sm-5 col-md-5">
             <h2 className="offer__title">La clave está en los detalles</h2>
           </div>
           <div className="offer__text col-12 col-md-5">

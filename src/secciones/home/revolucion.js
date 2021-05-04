@@ -1,11 +1,16 @@
-import img from "../../assets/images/revolucion/agustin_baragiola.jpg";
+import agustin_baragiola from "../../assets/images/revolucion/agustin_baragiola.jpg";
+import agustin_baragiolax2 from "../../assets/images/revolucion/agustin_baragiolax2.jpg";
 
 const Revolucion = () => {
   return (
     <div className="revolucion">
       <div className="container">
         <div className="revolucion__image">
-          <img src={img} alt="Agustin Baragiola"></img>
+          <img
+            src={agustin_baragiola}
+            alt="Agustin Baragiola"
+            srcSet={agustin_baragiolax2 + " 2x"}
+          ></img>
         </div>
         <div className="revolucion__title">
           <h3>

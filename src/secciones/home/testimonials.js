@@ -8,8 +8,8 @@ import Rodrigo from "../../assets/images/testimonials/rodrigo-calderon.jpg";
 import Rodrigo2X from "../../assets/images/testimonials/rodrigo-calderonx2.jpg";
 import Gabriel from "../../assets/images/testimonials/gabriel-vinderola.jpg";
 import Gabriel2X from "../../assets/images/testimonials/gabriel-vinderolax2.jpg";
-import Joaquin from "../../assets/images/testimonials/joaquin-lege.jpg";
-import Joaquin2X from "../../assets/images/testimonials/joaquin-legex2.jpg";
+import Joaquin_Ramiro from "../../assets/images/testimonials/joaquin-ramiro.jpg";
+import Joaquin_Ramiro2X from "../../assets/images/testimonials/joaquin-ramirox2.jpg";
 
 // Icons
 import { ReactComponent as IconBack } from "../../assets/icons/Back.svg";
@@ -110,23 +110,25 @@ const Testimonials = () => {
           <div className="testimonio d-flex">
             <div className="testimonio__frase font-weight--500">
               <p>
-                Es una experiencia increíble. Si te gusta descubrir distintas
-                combinaciones y disfrutar de sensaciones diferentes... Es un
-                viaje placentero para tu paladar.
+                Margot es la cocina del futuro; una caja de pandora por
+                descubrir. Agustín y su equipo poseen una visión moderna de la
+                cocina autóctona y auto-sustentable. Nadie les marca el camino y
+                eso los va a llevar lejos. Conservan, fermentan y le ganan a la
+                estacionalidad de nuestros alimentos.
               </p>
 
               <p className="testimonio__autor d-none d-md-flex align-items-center color--olivo">
-                <span className="font-weight--600">Joaquín lege</span>
+                <span className="font-weight--600">NERO COCINA</span>
                 <br></br>
                 <div className="separador d-flex bg--olivo"></div>
-                CHEF NERO
+                Joaquín L. y Ramiro K.
               </p>
             </div>
 
             <img
               className="testimonio__imagen"
-              src={Joaquin}
-              srcSet={Joaquin2X + " 2x"}
+              src={Joaquin_Ramiro}
+              srcSet={Joaquin_Ramiro2X + " 2x"}
               alt="Miss Monique"
             />
 
